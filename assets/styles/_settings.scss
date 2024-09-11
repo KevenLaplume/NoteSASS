@@ -1,0 +1,18 @@
+//Variable
+$color1: rgb(225, 104, 124);
+$color2: rgb(255, 238, 205);
+$color3: cyan;
+$white:  rgba(255, 246, 246, 0.953);
+$black:  rgb(5, 5, 5);
+
+//Mixin
+@mixin centerchild{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+body{
+    background: $color2;
+}
