@@ -1,0 +1,49 @@
+$color1: rgb(225, 104, 124);
+$color2: rgb(255, 238, 205);
+$color3: cyan;
+$white:  rgba(255, 246, 246, 0.953);
+$black:  rgb(5, 5, 5);
+
+
+body{
+    background: $color2;
+}
+
+nav{
+    background: $color1;
+    border-radius: 10px;
+
+    ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 40px;
+
+        li{
+            list-style: none;
+            color: $black;
+        }
+    }
+}
+
+header{
+    h1{
+        @media screen and (max-width: 700px){
+            font-size: 2rem;
+           }
+
+        font-size:3rem ;
+        text-align: center;
+
+        &::after{
+            content: "*";
+            position: absolute;
+            transform: translateY(-6px);
+            color: $color1;
+            transition: 0.2s;
+        }
+        &:hover::after{
+            transform: scale(2);
+        }
+    }
+}
